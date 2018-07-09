@@ -1,3 +1,4 @@
+# to get the maxmium length of a sentence from a given string
 def solution(S):
     # write your code in Python 3.6
     import re
@@ -19,3 +20,11 @@ def solution(S):
         #print(i, e)
         d.append(e)
     return max(d)
+
+#test
+#S = 'Forget CVs..Save time . x x'
+#solution(S)
+#we will get 2
+#S = 'We test coders. Give us a try'
+#solution(S)
+#we will get 4
