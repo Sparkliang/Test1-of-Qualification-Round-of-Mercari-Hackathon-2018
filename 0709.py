@@ -9,11 +9,13 @@ def solution(S):
         b = a[i]
         c = re.split(r'[ ]', b)
         t = len(c)
-        if c[t - 1] == '':
+        if c[t-1] == '':
             e = len(c) - 1
         elif c[0] == '':
             e = len(c) - 1
             #print(c)
+        elif c[0] or c[t-1] == '':
+            e = len(c) - 2
         else:
             e = len(c)
             #print(c)
